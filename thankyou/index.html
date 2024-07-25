@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your welcome😜!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button type="Submit" class="button" onclick="openThankyou()">
+        Submit
+      </button>
+      <div class="thankyou" id="thankyou">
+        <img src="./tick.img.png" />
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully <br>submitted. Thanks boss😜!</p>
+        <button type="button" onclick="closeThankyou()">OK</button>
+      </div>
+    </div>
+
+    <script>
+      let thankyou = document.getElementById("thankyou");
+      function openThankyou() {
+        thankyou.classList.add("open-thankyou");
+      }
+      function closeThankyou() {
+        thankyou.classList.remove("open-thankyou");
+      }
+    </script>
+  </body>
+</html>
 
